@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Plantilla de Correo Electrónico</title>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+    /* Estilos generales */
+    body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #565656;
+    }
+
+     /* ----------------------- */
+
+
+    /* Contenedor principal */
+    .container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    }
+
+     /* ----------------------- */
+
+    /* Encabezado */
+    .header {
+    background-color: #ffffff;
+    }
+
+    /* Titulos del template */
+    .title_content {
+    width: 600px;
+    padding: 0;
+    text-align: center;
+    }
+
+
+     /* ----------------------- */
+
+    /* Titulo H1 */
+    h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #3c409f;
+    }
+
+     /* Titulo H2 */
+    h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    }
+
+     /* Titulo H3 */
+    h3{
+    font-size: 24px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    color: #7d7d7d;
+    padding: 28px;
+    text-align: center; 
+    }
+
+     /* Titulo H4 */
+    h4{
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #505050;
+    }
+
+      /* Párrafos */
+    p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(126, 126, 126);
+    }
+
+     /* ----------------------- */
+
+    /* Pie de página */
+    .footer {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px;
+    }
+
+     /* ----------------------- */
+
+
+
+    /* BOX Celeste Nombre  de la recaudadora*/
+
+    .Nombre_recaudadora {
+    width: 600px;
+    height: 60px;
+    background-color: #7ec1ee;
+    border-radius: 40px;
+    text-align: center; 
+    color: #fff;
+    font-size: 24px;
+    line-height: 60px; 
+    }
+
+    /* ----------------------- */
+
+
+     /* Imagen y Texto en 2 Columnas */
+    .container_img_column {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    }
+
+    .section {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 20px;
+    text-align: justify;
+    }
+
+    .section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    }
+
+
+    /* Caja con bordes celestes con texto */
+
+    .container_box_border {
+    max-width: 580px;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    background-color: #ffffff;
+    padding: 20px;
+    }
+
+    .box_border {
+    margin: 0 auto;
+    width: 520px;
+    height: 200px;
+    background-color: #ffffff; /* Fondo blanco */
+    border: 2px solid #69b6e9; /* Borde de 1px de color celeste */
+    border-radius: 40px; /* Radio de borde de 40px */
+    padding: 20px; /* Espacio interior para el texto */
+    font-size: 18px;
+    text-align: center; /* Centra el contenido horizontalmente */
+    color: #333; /* Color del texto */
+    }
+
+    /* ----------------------- */
+
+    /* Como recibis el premio */
+    .container_p_premio{
+    width: 100%; /* Ancho del div */
+    height: 160px; /* Alto del div */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    border: 1px solid #ffffff; 
+    }
+
+    .p_premio{
+    width: 540px;
+    text-align: center; 
+    }
+
+    /* ----------------------- */
+
+
+    
+    /* Imagen png con texto parrafo azul */
+
+    .container_image {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    }
+
+    .image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    }
+
+    .text {
+    position: absolute; /* Establece posición absoluta para superponer el párrafo */
+    top: 40%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el contenido en relación al centro del contenedor */
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #3c409f;
+    padding: 10px;
+    }
+
+    /* ----------------------- */
+
+
+     /* Subtitulo parrafo Gris */
+    .text_paragraph {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center; /* Centra el contenido horizontalmente */
+    }
+
+    .paragraph_subtitle{ 
+    font-size: 24px;
+    color: #888; /* Color gris */
+    font-weight: 400; /* Fuente en negrita (semibold) */
+    }
+
+     /* ----------------------- */
+
+
+
+    
+    /* 2 CAJAS CON BORDES CON TEXTO */
+
+    .container_box_column {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 20px; /* Espacio entre las columnas */
+    text-align: center; /* Centra el contenido horizontalmente */
+    }
+
+    .box_text_column {
+    width: 220px;
+    height: 120px;
+    background-color: #ffffff; 
+    border: 2px solid #69b6e9; /* Borde celeste */
+    border-radius: 20px; /* Radio de borde de 40px */
+    text-align: center;
+    padding: 20px;
+    }
+
+    /* ----------------------- */
+
+
+    /* LOGO AQUI PAGO*/
+    .container_logo {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center; /* Centra el contenido horizontalmente */
+    }
+
+    .logo {
+    width: 120px; /* Ancho de tu logo */
+    margin: 0 auto; /* Centra horizontalmente el logo */
+    display: block;
+    }
+
+     /* ----------------------- */
+
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <div class="title_content">
+        <h1>Con Aquí Pago
+            tenés más beneficios
+        </h1>
+        <h4>Por eso te traemos una buena noticia.</h4>
+    </div>
+
+    <div class="Nombre_recaudadora">
+        <h2> 
+            Nombre de la recaudadora
+        </h2>
+    </div>
+    
+    <div class="container_img_column">
+        <div class="section">
+
+            <div>
+                <img src="img/mail1.png" alt="Imagen">
+            </div>  
+
+            <div>
+                <p>
+                    Por formar parte de la red de Aquí Pago,
+                    desde este mes, participás de la promo
+                    <b>¡Cumplí el desafío y ganá!</b>
+                </p>
+                <p> 
+                    Se asignará un objetivo en comisiones
+                    para tu local, si completás el desafío al
+                    cierre del mes, te llevás una <b>comisión
+                        adicional.</b> 
+                </p>             
+            </div>
+
+        </div>
+
+    <!-- BOX BORDE CELESTE -->   
+    </div>
+    <div class="container_box_border"> 
+        <div class="box_border">
+            <p> 
+            Te enviaremos en otro mail la meta del mes y
+            también los avances por semana, además, te
+            iremos contando las novedades por este medio.
+            Si al cierre del mes llegás al objetivo, te llevás
+            una comisión adicional.
+            </p>
+            <p> 
+                Si al cierre del mes llegás al objetivo, te llevás
+                una comisión adicional.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- COMO RECIBIS EL PREMIO? -->   
+    <div class="title_content">
+        <h1>
+            ¿Cómo recibís el premio?
+        </h1>
+        <div class="container_p_premio">
+            <p class="p_premio">
+                Para poder cobrar el premio, deberás presentar una
+                factura en concepto de "Comisión adicional por
+                desafío", esta factura debe ser diferente a la comisión
+                generada en el mes, el premio será acreditado a tu
+                cuenta de comisiones.
+            </p>
+        </div>
+        
+    </div>
+
+    <!-- PNG MAS TEXTO -->  
+
+    <div class="container_image">
+        <img src="img/mail2.png" alt="Imagen" class="image">
+        <p class="text">
+            Cuantas más comisiones generes
+            con Aquí Pago,
+            más posibilidades tenés de
+            llegar a la meta.
+        </p>
+    </div>
+
+    <!-- TEXTO EXITO -->  
+    <div>
+        <h3>
+            ¡Éxitos!
+        </h3>
+    </div>
+
+    <!-- LOGO AQUI PAGO -->
+    <div class="container_logo">
+        <img src="img/logo_aquipago.png" alt="Logo de la empresa" class="logo">
+    </div>
+
+
+    <!-- NOMBRE RECAUDADORA -->
+
+    <div class="Nombre_recaudadora">
+        <h2> 
+        Nombre de la recaudadora
+        </h2>
+    </div>
+
+
+    <!-- Subtitulo -->
+
+    <div class="text_paragraph">
+        <p class="paragraph_subtitle">
+            Te compartimos la meta de
+            <b>¡Cumplí el desafío y ganá! </b>
+            para el mes de octubre-2023
+        </p>
+    </div>
+
+
+    <!-- Cajas con bordes en 2 columnas " -->
+
+    <div class="container_box_column">
+        <div class="box_text_column">
+            <p>
+                Si por el mes
+                de Octubre
+                comisionás:
+                Gs. X.XXX.XXX
+            </p>  
+        </div>
+        <div class="box_text_column">
+            <p>
+                Te podés llevar
+                en total una
+                comisión de:   
+                Gs.  X.XXX.XXX
+            </p>  
+        </div>
+    </div>
+    
+    <!--  Imagenes con párrafo "Cuantas más comisiones" -->
+
+    <div class="container_image">
+        <img src="img/mail2.png" alt="Imagen" class="image">
+        <p class="text">
+            Cuantas más comisiones generes
+            con Aquí Pago,
+            más posibilidades tenés de
+            llegar a la meta.
+        </p>
+    </div>
+
+    <!-- LOGO AQUI PAGO -->
+    <div class="container_logo">
+        <img src="img/logo_aquipago.png" alt="Logo de la empresa" class="logo">
+    </div>
+
+
+
+
+
+    <div class="footer">
+    </div>
+</div>
+
+
+</body>
+</html>
